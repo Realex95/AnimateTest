@@ -1,0 +1,107 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: consolas;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.key
+{
+    position: relative;
+    display:inline-block;
+    width: 80px;
+    height: 80px;
+    padding: 8px 15px ;
+    border-radius: 10px;
+    background: linear-gradient(180deg,#282828,#202020);
+    box-shadow:inset -8px 0 8px rgba(0, 0, 0, 0.15),
+    inset 0 -8px 8px rgba(0, 0, 0, 0.25),
+    0 0 0 2px rgba(0, 0, 0, 0.75),
+    10px 20px 25px rgba(0, 0, 0, 0.4);
+    animation: animates 8s linear infinite;
+    margin: 10px 0;
+}
+
+@keyframes animates {
+    0%
+    {
+        box-shadow:inset -8px 0 8px rgba(248, 0, 190, 0.15),
+    inset 0 -8px 8px rgba(161, 37, 161, 0.25),
+    0 0 0 2px rgba(174, 28, 159, 0.75),
+    10px 20px 25px rgba(177, 22, 146, 0.4);
+    }
+
+    25%
+    {
+        box-shadow:inset -8px 0 8px rgba(34, 14, 187, 0.15),
+    inset 0 -8px 8px rgba(71, 18, 184, 0.25),
+    0 0 0 2px rgba(74, 39, 178, 0.75),
+    10px 20px 25px rgba(68, 17, 198, 0.4);
+    }
+
+    50%
+    {
+        box-shadow:inset -8px 0 8px rgba(51, 164, 72, 0.15),
+    inset 0 -8px 8px rgba(30, 181, 22, 0.25),
+    0 0 0 2px rgba(57, 141, 23, 0.75),
+    10px 20px 25px rgba(53, 178, 25, 0.4);
+    }
+
+    75%
+    {
+        box-shadow:inset -8px 0 8px rgba(197, 22, 22, 0.15),
+    inset 0 -8px 8px rgba(202, 25, 13, 0.25),
+    0 0 0 2px rgba(178, 53, 39, 0.75),
+    10px 20px 25px rgba(198, 29, 17, 0.4);
+    }
+
+    100%
+    {
+        box-shadow:inset -8px 0 8px rgba(248, 0, 190, 0.15),
+    inset 0 -8px 8px rgba(161, 37, 161, 0.25),
+    0 0 0 2px rgba(174, 28, 159, 0.75),
+    10px 20px 25px rgba(177, 22, 146, 0.4);
+    }
+}
+
+
+.key::before
+{
+ content: '';
+ position: absolute;
+ top: 3px;
+ left: 4px;
+ bottom: 14px;  
+ right: 12px;
+ background: linear-gradient(90deg,#232323,#4a4a4a);
+ border-radius: 10px;
+ box-shadow: -10px -10px 10px rgba(255,255,255,0.25),
+ 10px 5px 10px rgba(0, 0, 0, 0.15);
+border-left: 1px solid #0004;
+border-bottom: 1px solid #0004;
+border-top: 1px solid #0009;
+}
+
+.key i
+{
+    position: relative;
+    font-style: normal;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    
+}
+
+.espace
+{
+    width: 39%;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cube effet lumineux</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="blob.css">
+    <link rel="stylesheet" href="keyboard.css">
+</head>
+<body>
+    <div class="cube">
+        <div class="top"></div>
+        <div>
+            <span style="--i:0;"></span>
+            <span style="--i:1;"></span>
+            <span style="--i:2;"></span>
+            <span style="--i:3;"></span>
+        </div>
+    </div>
+    <section>
+        <div class="blob">
+            <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+                <defs>
+                  <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" style="stop-color: rgb(194, 229, 156);"></stop>
+                    <stop offset="100%" style="stop-color: rgb(100, 179, 244);"></stop>
+                  </linearGradient>
+                </defs>
+                <path fill="url(#gradient)">
+                    <animate attributeName="d"
+                        dur="10000ms"
+                        repeatCount="indefinite"
+                        
+                        values="M447,282.5Q408,315,383.5,337Q359,359,337,382.5Q315,406,282.5,406.5Q250,407,204,439.5Q158,472,144,421Q130,370,114,341.5Q98,313,92.5,281.5Q87,250,78,212.5Q69,175,78,131Q87,87,132.5,81Q178,75,214,44.5Q250,14,293.5,27.5Q337,41,364.5,74.5Q392,108,392,149.5Q392,191,439,220.5Q486,250,447,282.5Z;
+
+                        M433.5,284Q414,318,411,363Q408,408,376.5,443.5Q345,479,297.5,450Q250,421,208,437.5Q166,454,137,423Q108,392,107.5,350.5Q107,309,59.5,279.5Q12,250,22.5,205Q33,160,74.5,138Q116,116,140.5,80Q165,44,207.5,47.5Q250,51,279.5,79.5Q309,108,348.5,110Q388,112,409,144Q430,176,441.5,213Q453,250,433.5,284Z;
+                        
+                        M446.5,282.5Q408,315,399.5,353Q391,391,365.5,429Q340,467,295,468.5Q250,470,205.5,467Q161,464,149.5,413Q138,362,104.5,343Q71,324,41,287Q11,250,59,220.5Q107,191,95,137Q83,83,126,68.5Q169,54,209.5,76.5Q250,99,285,90.5Q320,82,353.5,97.5Q387,113,414.5,141.5Q442,170,463.5,210Q485,250,446.5,282.5Z;
+
+                        M433.5,284Q414,318,411,363Q408,408,376.5,443.5Q345,479,297.5,450Q250,421,208,437.5Q166,454,137,423Q108,392,107.5,350.5Q107,309,59.5,279.5Q12,250,22.5,205Q33,160,74.5,138Q116,116,140.5,80Q165,44,207.5,47.5Q250,51,279.5,79.5Q309,108,348.5,110Q388,112,409,144Q430,176,441.5,213Q453,250,433.5,284Z;
+                        
+                        M447,282.5Q408,315,383.5,337Q359,359,337,382.5Q315,406,282.5,406.5Q250,407,204,439.5Q158,472,144,421Q130,370,114,341.5Q98,313,92.5,281.5Q87,250,78,212.5Q69,175,78,131Q87,87,132.5,81Q178,75,214,44.5Q250,14,293.5,27.5Q337,41,364.5,74.5Q392,108,392,149.5Q392,191,439,220.5Q486,250,447,282.5Z;
+                        " >
+                    </animate>
+                </path>
+              </svg>
+        </div>
+        <div class="blob">
+            <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+                <defs>
+                  <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" style="stop-color: rgb(194, 229, 156);"></stop>
+                    <stop offset="100%" style="stop-color: rgb(100, 179, 244);"></stop>
+                  </linearGradient>
+                </defs>
+                <path fill="url(#gradient)">
+                    <animate attributeName="d"
+                        dur="10000ms"
+                        repeatCount="indefinite"
+                        
+                        values="id="blob" d="M447,282.5Q408,315,383.5,337Q359,359,337,382.5Q315,406,282.5,406.5Q250,407,204,439.5Q158,472,144,421Q130,370,114,341.5Q98,313,92.5,281.5Q87,250,78,212.5Q69,175,78,131Q87,87,132.5,81Q178,75,214,44.5Q250,14,293.5,27.5Q337,41,364.5,74.5Q392,108,392,149.5Q392,191,439,220.5Q486,250,447,282.5Z;
+
+                        M433.5,284Q414,318,411,363Q408,408,376.5,443.5Q345,479,297.5,450Q250,421,208,437.5Q166,454,137,423Q108,392,107.5,350.5Q107,309,59.5,279.5Q12,250,22.5,205Q33,160,74.5,138Q116,116,140.5,80Q165,44,207.5,47.5Q250,51,279.5,79.5Q309,108,348.5,110Q388,112,409,144Q430,176,441.5,213Q453,250,433.5,284Z;
+                        
+                        M446.5,282.5Q408,315,399.5,353Q391,391,365.5,429Q340,467,295,468.5Q250,470,205.5,467Q161,464,149.5,413Q138,362,104.5,343Q71,324,41,287Q11,250,59,220.5Q107,191,95,137Q83,83,126,68.5Q169,54,209.5,76.5Q250,99,285,90.5Q320,82,353.5,97.5Q387,113,414.5,141.5Q442,170,463.5,210Q485,250,446.5,282.5Z;
+
+                        M451.5,296Q473,342,428,362.5Q383,383,350.5,398.5Q318,414,284,453Q250,492,211,465.5Q172,439,131,424.5Q90,410,62.5,374.5Q35,339,31.5,294.5Q28,250,42,210Q56,170,65.5,122.5Q75,75,120,60Q165,45,207.5,40.5Q250,36,279,73.5Q308,111,344,115.5Q380,120,423,140Q466,160,448,205Q430,250,451.5,296Z;
+                        
+                        M467,289Q438,328,425,370Q412,412,362,406.5Q312,401,281,440.5Q250,480,204,476Q158,472,149.5,415.5Q141,359,119.5,336Q98,313,72.5,281.5Q47,250,78.5,221Q110,192,109,150Q108,108,147.5,102.5Q187,97,218.5,82Q250,67,292,57Q334,47,346.5,94Q359,141,412,151Q465,161,480.5,205.5Q496,250,467,289Z
+                        " >
+                    </animate>
+                </path>
+              </svg>
+        </div>
+    </section>
+    <div class="keyboard">
+        <span class="key"><i>A</i></span>
+        <span class="key"><i>Z</i></span>
+        <span class="key"><i>E</i></span>
+        <span class="key"><i>R</i></span>
+        <span class="key"><i>T</i></span>
+        <span class="key"><i>Y</i></span>
+        <span class="key"><i>U</i></span>
+        <span class="key"><i>I</i></span>
+        <span class="key"><i>O</i></span>
+        <span class="key"><i>P</i></span>
+        <br>
+        <span class="key"><i>Q</i></span>
+        <span class="key"><i>S</i></span>
+        <span class="key"><i>D</i></span>
+        <span class="key"><i>F</i></span>
+        <span class="key"><i>G</i></span>
+        <span class="key"><i>H</i></span>
+        <span class="key"><i>J</i></span>
+        <span class="key"><i>K</i></span>
+        <span class="key"><i>L</i></span>
+        <span class="key"><i>M</i></span>
+        <br>
+        <span class="key"><i>W</i></span>
+        <span class="key"><i>X</i></span>
+        <span class="key"><i>C</i></span>
+        <span class="key"><i>V</i></span>
+        <span class="key"><i>B</i></span>
+        <span class="key"><i>N</i></span>
+        <span class="espace key"><i>---</i></span>
+    </div>
+</body>
+</html>
